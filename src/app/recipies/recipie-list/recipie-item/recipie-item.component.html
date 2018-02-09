@@ -1,0 +1,14 @@
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start clearfix"
+      (click)="onSelected()">
+      <div class="d-flex w-100 justify-content-between">
+        <h4 class="list-group-item-heading mb-1">{{ recipie.name }}</h4>
+        <p class="mb-1">{{ recipie.description }}</p>
+        <span class="pull-right">
+            <img
+             [src]="recipie.imagePath"
+              alt="{{ recipie.name }}"
+              class="img-resposive"
+              style="max-height: 50px;">
+        </span>
+      </div>
+    </a>
